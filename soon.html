@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>برمجة - مشاريع سعودية مفتوحة المصدر</title>
+
+    <style>
+ * {
+ box-sizing: border-box;
+  }
+ html, body {
+ margin: 0;
+ font-family: 'Poppins', sans-serif;
+ background-color:#f4f4f4;
+ overflow-x: hidden;
+ }
+.row {
+ display: flex;
+ flex-wrap: wrap;
+ margin: 0 -15px;
+ }
+ section {
+ margin-top: 120px;
+}
+.header-container {
+ margin-top: 15px;
+ display: flex;
+  align-items: center;  
+  justify-content: center; /* محاذاة المحتوى إلى الوسط */
+}
+.header-logo {
+    margin-left: 15px; /* مسافة بين الصورة والنص */
+    max-height: 50px; /* ارتفاع الصورة */
+    border-radius: 5px; /* حواف دائرية */
+    margin-right: 15px;
+}
+.heading-section h4 {
+    margin: 0; /* إزالة المسافة الافتراضية */
+    margin-bottom: 15px;
+    color: #5b7fc6; /* لون النص */
+    font-size: 34px; /* حجم النص */
+}
+.most-popular{
+    margin-top: 40px;
+}
+.section-card {
+ background-color: #f9f9f9;
+ border-radius: 15px;
+ border: 3px solid #151414; /* إضافة حدود ملونة */
+ overflow: hidden;
+ text-align: center;
+ margin: 15px;
+ padding: 20px;
+ min-height: 300px; 
+ box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* تحسين الظل */
+ position: relative;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ flex: 1 1 200px;
+ transition: transform 0.3s; /* انتقال سلس عند التحويم */
+     }
+ .section-card:hover {
+  transform: translateY(-5px) scale(1.02); /* تضخيم خفيف عند التحويم */
+      }
+.section-card img {
+ max-height: 150px;
+ border-radius: 10px;
+ margin-bottom: 15px;
+ object-fit: cover;
+    }
+ .section-card h2 {
+ font-size: 34px;
+ color: #151414;
+  margin: 10px 0;
+     }
+.section-card p {
+ font-size: 16px;
+ color: #151414;
+  margin-bottom: auto;
+     }
+.language-logo {
+ position: absolute;
+ top: 15px;
+ left: 15px;
+ width: 60px;
+ height: 60px;
+ border-radius: 50%;
+ background-color: #f5f0f0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+ .participants {
+ font-size: 30px;
+ color: #000000;
+ margin-top: 20px;
+        }
+ .btn-download {
+ background: linear-gradient(90deg, #bd577a, #b34b22);
+ color: #ffffff;
+ border: none;
+ padding: 12px 20px;
+ border-radius: 30px;
+ text-decoration: none;
+ font-weight: bold;
+ transition: all 0.3s;
+ margin-top: 10px;
+ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+ font-size: 16px;
+        }
+ .btn-download:hover {
+ transform: scale(1.05);
+ box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+        }
+.footer { 
+ background-color:#f4f4f4;
+ padding: 20px 0;
+ text-align: center;
+ margin-top: 40px;
+        }
+.footer p{
+ color: #151414;
+        }
+ .first-card {
+ margin-right: 15px; /* مسافة عن الحدود اليسرى */
+        }
+.section-card a {
+  text-decoration: none; /* إزالة الخط من تحت الروابط */   
+        }
+.signature p{
+  text-align: center;
+  font-family: Helvetica, Arial, Sans-Serif;
+  font-size: 15px;
+  color: #151414;
+}
+.signature .much-heart{
+  display: inline-block;
+  position: relative;
+  margin: 0 4px;
+  height: 10px;
+  width: 10px;
+  background: #ff003c;
+  border-radius: 4px;
+  -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.signature .much-heart::before, 
+.signature .much-heart::after {
+ display: block;
+  content: '';
+  position: absolute;
+  margin: auto;
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  background: #ff003c;
+  top: -4px;
+}
+.signature .much-heart::after {
+  bottom: 0;
+  top: auto;
+  left: -4px;
+}
+.signature a {
+  color: #000000;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 15px;
+}
+    </style>
+</head>
+
+<body>
+    <!-- ***** Banner Start ***** -->
+    <div class="header">
+        <div class="header-container">
+            <img src="imsg/e.jpg" alt="Logo" class="header-logo">
+            <div class="heading-section">
+                <h4>مشاريع سعوديه مفتوحة المصدر</h4>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Most Popular Start ***** -->
+    <div class="container">
+        <div class="most-popular">
+            <div class="row">
+                <div class="col-sm-6 col-lg-3 mb-4 first-card">
+                    <a href="#">
+                        <div class="section-card text-center shadow-sm">
+                            <img src="https://image.pngaaa.com/343/4169343-middle.png" alt="Language Logo" class="language-logo">
+                            <h2>مشروع 1</h2>
+                            <p>تحويل الصور إلى PDF</p>
+                            <img class="img-fluid" src="imsg/jpgtopdf.png" alt="jpg to pdf">
+                            <p class="participants">المشاركين:</p>
+                            <ul style="list-style-type:none; padding:0; margin:0;">
+                            <li><a href="https://github.com/mmhjmaili">Mohammad Majid</a></li>
+                            <li><a href="https://github.com/Somaaya">Somaaya</a></li>
+                            <li><a href="https://github.com/reem23r">reem23r</a></li>
+                            </ul>
+                           <a href="https://github.com/mmhjmaili/image_to_pdf_with_Django" class="btn-download">تحميل المشروع</a>
+                        </div>
+                    </a>
+                </div>
+    
+                <!-- Project 2 -->
+                <div class="col-sm-6 col-lg-3 mb-4 first-card">
+                    <a href="#">
+                        <div class="section-card text-center shadow-sm">
+                            <img src="https://image.pngaaa.com/343/4169343-middle.png" alt="Language Logo" class="language-logo">
+                            <h2>مشروع 2</h2>
+                            <p>نظام كورسات اونلاين التعليمي</p>
+                            <img class="img-fluid" src="imsg/online-course.png" alt="online courses">
+                            <p class="participants">المشاركين:</p>
+                            <ul style="list-style-type:none; padding:0; margin:0;">
+                              <li><a href="https://github.com/mmhjmaili">Mohammad Majid</a></li>
+                              <li><a href="https://github.com/Somaaya">Somaaya</a></li>
+                              <li><a href="https://github.com/reem23r">reem23r</a></li>
+                          </ul>
+                          <a href="#" class="btn-download">تحميل المشروع</a>
+                        </div>
+                    </a>
+                </div>
+    
+                <!-- Project 3 -->
+                <div class="col-sm-6 col-lg-3 mb-4 first-card">
+                    <a href="#">
+                        <div class="section-card text-center shadow-sm">
+                            <img src="https://miro.medium.com/v2/resize:fit:420/1*jZHMUYiSpf1bBg9kKwXkAA.png" alt="Language Logo" class="language-logo">
+                            <h2>مشروع 3</h2>
+                            <p>قريباً</p>
+                            <img class="img-fluid" src="imsg/coming-soon.png" alt="soon">
+                            <p class="participants">المشاركين:</p>
+                            <ul style="list-style-type:none; padding:0; margin:0;">
+                              <li><a href="https://github.com/mmhjmaili">Mohammad Majid</a></li>
+                              <li><a href="https://github.com/Somaaya">Somaaya</a></li>
+                              <li><a href="https://github.com/reem23r">reem23r</a></li>
+                          </ul>
+                          <a href="#" class="btn-download">تحميل المشروع</a>
+                        </div>
+                    </a>
+                </div>
+    
+                <!-- Project 4 -->
+                <div class="col-sm-6 col-lg-3 mb-4 first-card">
+                    <a href="#">
+                        <div class="section-card text-center shadow-sm">
+                            <img src="https://banner2.cleanpng.com/20190623/yp/kisspng-python-computer-icons-programming-language-executa-1713885634631.webp" alt="Language Logo" class="language-logo">
+                            <h2>مشروع 4</h2>
+                            <p>قريباً</p>
+                            <img class="img-fluid" src="imsg/coming-soon.png" alt="soon">
+                            <p class="participants">المشاركين:</p>
+                            <ul style="list-style-type:none; padding:0; margin:0;">
+                              <li><a href="https://github.com/mmhjmaili">Mohammad Majid</a></li>
+                              <li><a href="https://github.com/Somaaya">Somaaya</a></li>
+                              <li><a href="https://github.com/reem23r">reem23r</a></li>
+                          </ul>
+                          <a href="#" class="btn-download">تحميل المشروع</a>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>الحقوق محفوظة لـ جميع المشاركين في المشاريع البرمجية © 2023 - {{ data_year }}.</p>
+        <div class="signature">
+            <p><i class="much-heart"></i> designed by <a href="https://www.linkedin.com/in/somaya-almutiri-b85b9a275?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">Somaya Almutiri</a></p>
+          </div>
+    </div>
+    
+</body>
+
+</html>
